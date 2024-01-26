@@ -1,0 +1,1029 @@
+/* Global Discription Start */ 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+background-color: rgb(5,5,27);
+perspective : 700;
+}
+.title{
+  font-size: 36px;
+  color: rgba(252,153,91,255);
+  width: fit-content;
+  margin: auto;
+}
+button{
+  width: 70px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color:rgba(252,153,91,255);
+  color: white;
+  border: none; 
+  cursor: pointer;
+  transition: 1s;
+  }
+   button:hover{
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  }
+/* Global Discription End */
+
+
+/* Header Start */
+header{
+width: 90%;
+margin: auto;
+display: flex;
+height: fit-content;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.7);
+margin-top: 20px;
+height: 7vh;
+border-radius: 30px;
+position: fixed;
+left: 50%;
+transform: translate(-50%,0);
+z-index: 5;
+}
+header h2,ul{
+display: inline-block;
+width: 40%;
+}
+header h2{
+margin-left: 50px;
+color: rgba(252,153,91,255);
+}
+.link{
+position: relative;
+padding: 10px;
+border-radius: 20px;
+transition: 1s;
+}
+.link:hover{
+  background-color: rgba(252,153,91,255);
+
+}
+.link4{
+margin-right: 10px;
+}
+header ul{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+header ul li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+text-transform: capitalize;
+}
+header ul li{
+display: inline-block;
+list-style: none;
+}
+.list-link1{
+position: absolute;
+width: 600px;
+top: 58px;
+background-color: antiquewhite;
+border-radius: 5px;
+opacity: 0;
+visibility: hidden;
+transform: scale(0);
+transition: 1s ;
+}
+.list-link1 h2{
+color: black;
+margin-left: 20px;
+padding: 20px;
+border-radius: 30px;
+font-size: 20px;
+transition: 1s;
+}
+.list-link1 h2:hover{
+  transform: scale(1.2,1.2);
+}
+.link1:hover .list-link1{
+opacity: 1;
+visibility: visible;
+transform: scale(1);
+cursor: pointer;
+}
+.signup{
+background-color:rgba(252,153,91,255);
+;
+border-radius: 30px;
+border: none;
+outline: none;
+height:5vh;
+width: 100px;
+color: white;
+font-size: 18px;
+font-weight: 600;
+position: relative;
+margin-right: 20px;
+text-transform: capitalize;
+transition: 0.1s;
+cursor: pointer;
+
+}
+.signup::after{
+position: absolute;
+content: "Login";
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 0;
+height: 0;
+background-color: rgba(252,153,91,255);
+top: 50px;
+left: 50px;
+border-radius: 30px;
+transition: 1s all;
+opacity: 0;
+cursor: pointer;
+}
+.signup:hover::after{
+width: 100px;
+height: 5vh;
+opacity: 1;
+cursor: pointer;
+}
+/* Header End */
+
+
+/* Home Section Start */
+.Home-Section{
+height: 100vh;
+background-image: url("../images/backgroun.jpg");
+position: relative;
+}
+.home-overlay{
+width: 100%;
+height: 100%;
+position: absolute;
+background-color: rgba(25, 29, 88, 0.2);
+}
+.Home-Section .image-overlay{
+width: 100vw;
+position: absolute;
+bottom: 0;
+box-shadow:0px 0px 10px 2px black ;
+}
+.Home-Section .home-image{
+width: 600px;
+height: 900px;
+background-image: url("/images/world-hand-removebg.png");
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+right: 60px;
+bottom: 0;
+}
+.Home-Section .Home-content{
+position: absolute;
+top: 50%;
+left: 80px;
+transform: translate(0,-50%);
+max-width: 50%;
+}
+.Home-Section .Home-content h2{
+color: white;
+font-size: 64px;
+
+}
+.Home-Section .Home-content h2 span{
+color:rgba(252,153,91,255);
+}
+.Home-Section .Home-content h3{
+color: rgba(252,153,91,255);
+margin-bottom: 10px;
+}
+.Home-Section .Home-content p{
+color: white;
+font-size: 24px;
+}
+.Home-Section .Home-content button{
+width: 150px;
+height: 50px;
+font-size: 18px;
+font-weight: 600;
+background-color:rgba(252,153,91,255);
+color: white;
+border: none; 
+margin-top: 30px;
+cursor: pointer;
+transition: 1s;
+}
+.Home-Section .Home-content button:hover{
+border-radius: 20px;
+color: black;
+background-color: white;
+}
+/* Home Section End */
+
+
+
+/* introduction Section Start */
+
+.introduction-Section{
+height: 100vh;
+position: relative;
+}
+.left-circle , .introduction-content{
+position: absolute;
+top: 50%;
+transform: translate(0,-50%);
+}
+.left-circle{
+width: 40vw;
+height: 70vh;
+background-color: rgba(252,153,91,255);
+border-radius: 50% 0 0 50%;
+right:0;
+}
+.circle1{
+width: 200px;
+height: 200px;
+position: absolute;
+background-color:   rgba(252,153,91,255);
+z-index: 2;
+left: -100px;
+border-radius: 50%;
+box-shadow: 5px 5px 10px rgb(255, 255, 255);
+transition: 1s;
+
+}
+.circle2{
+width: 200px;
+height: 200px;
+position: absolute;
+background-color: rgb(80, 74, 74);
+z-index: 2;
+left: -100px;
+bottom: 0;
+border-radius: 50%;
+box-shadow: 5px 5px 10px rgb(255, 255, 255);
+
+}
+.circle3{
+width: 200px;
+height: 200px;
+position: absolute;
+background-color: rgb(17, 17, 65);
+z-index: 2;
+left: 40%;
+top: 60%;
+border-radius: 50%;
+box-shadow: 5px 5px 10px rgb(255, 255, 255);
+transition: 1s;
+
+}
+.circle-content-images{
+position: relative;
+width: 100%;
+height: 100%;
+border-radius: 50% 0 0 50%;
+}
+.introduction-Section .left-circle .img1{
+width: 400px;
+height:400px;
+background-image: url("/images/plane-table.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 20px 20px 20px 20px;
+position: absolute;
+top: 80%;
+left: 40%;
+transform: translate(-50%,-50%);
+transition: 1s;
+}
+.introduction-Section .left-circle .img2{
+width: 400px;
+height:400px;
+background-image: url("/images/plane-view.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 20px;
+position: absolute;
+top: -10%;
+left: 30%;
+transition: 1s;
+}
+.introduction-Section .left-circle .img1:hover{
+box-shadow: 5px 10px 20px white;
+z-index: 2;
+}
+.introduction-Section .left-circle .img2:hover{
+box-shadow: 5px 10px 20px white;
+z-index: 2;
+}
+.introduction-content{
+max-width: 40vw;
+left: 80px;
+}
+.introduction-content h2{
+font-size: 48px;
+text-transform: capitalize;
+color: white;
+}
+.introduction-content h2 span{
+color:rgba(252,153,91,255) ;
+}
+.introduction-content p{
+color: white;
+font-size: 18px;
+margin: 10px 0;
+}
+.introduction-content button{
+width: 150px;
+height: 50px;
+font-size: 18px;
+font-weight: 600;
+background-color:rgba(252,153,91,255);
+color: white;
+border: none; 
+margin-top: 30px;
+cursor: pointer;
+transition: 1s;
+}
+.introduction-content button:hover{
+border-radius: 20px;
+color: black;
+background-color: white;
+}
+/* introduction Section End */
+
+/* icon Section Start */
+
+.icon-Section{
+height: 50vh;
+position: relative;
+}
+.icon-Section .icon-container{
+background-color: rgba(252,153,91,255);
+width: 100%;
+height: 30%;
+border-radius: 100px;
+position: absolute;
+top: 50%;
+transform: translate(0,-50%);
+}
+.icon-container .icons-cards{
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.icon1 , .icon2 , .icon3 , .icon4{
+  position: relative;
+  height: 100%;
+}
+.icon1 .fa-users , .fa-pizza-slice , .fa-table-tennis , .fa-check-circle , .colored{
+position: absolute;
+top: 50%;
+transition: 1s;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.icon1 h4, .icon2 h4, .icon3 h4, .icon4 h4{
+padding-top: 80px;
+font-size: 25px;
+visibility: hidden;
+opacity: 0;
+transition: 1s;
+}
+.colored{
+  color: rgb(5,5,27)  !important;
+}
+.fa-users:hover ~  h4{
+  visibility: visible;
+  opacity: 1;
+}
+.fa-users:hover{
+  opacity: 0;
+}
+.fa-check-circle:hover ~  h4{
+  visibility: visible;
+  opacity: 1;
+}
+.fa-check-circle:hover{
+  opacity: 0;
+}
+.fa-pizza-slice:hover ~  h4{
+  visibility: visible;
+  opacity: 1;
+}
+.fa-pizza-slice:hover{
+  opacity: 0;
+}
+.fa-table-tennis:hover ~  h4{
+  visibility: visible;
+  opacity: 1;
+}
+.fa-table-tennis:hover{
+  opacity: 0;
+}
+.icons-cards .fas{
+color: white;
+font-size: 60px;
+width: fit-content;
+}
+
+/* icon Section End */
+
+/* Special Start */
+
+.special{
+height: 100vh;
+}
+.special-container{
+width: 100%;
+height: 90%;
+}
+.line{
+width: 200px;
+height: 10px;
+border-radius: 20px;
+margin: 20px auto;
+background-color: white;
+}
+.special-cards{
+width: 90vw;
+height: 80%;
+margin: auto;
+background-color: aliceblue;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+}
+.special-cards h2{
+  font-size: 36px;
+  color: rgba(252,153,91,255);
+  width: fit-content;
+  margin: auto;
+}
+.Card1{
+grid-row: 1/3;
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card2{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card3{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card4{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card5{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card6{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+.Card7{
+height: 100%;
+width: 100%;
+transform-style: preserve-3d;
+position: relative;
+transition: 2s;
+}
+
+.Card1 .Front{
+background-image: url("/images/AustraliaF.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card1 .Back{
+background-image: url("/images/AustrliaB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotateX(180deg);
+transition: 2s;
+}
+.Card1:hover{
+transform: rotateX(180deg);
+}
+
+.Card2 .Front{
+background-image: url("/images/EgyF.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: center;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card2 .Back{
+background-image: url("/images/EgyB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotateY(180deg);
+transition: 2s;
+}
+.Card2:hover{
+transform: rotateY(180deg);
+}
+
+.Card3 .Front{
+background-image: url("/images/EuropeF.jpg");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card3 .Back{
+background-image: url("/images/EuropeB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotateY(180deg);
+transition: 2s;
+}
+.Card3:hover{
+transform: rotateY(180deg);
+}
+
+.Card4 .Front{
+background-image: url("/images/FranceF.jpg");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card4 .Back{
+background-image: url("/images/FranceB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotateY(180deg);
+transition: 2s;
+}
+.Card4:hover{
+transform: rotateY(180deg);
+}
+
+.Card5 .Front{
+background-image: url("/images/RomaF.jpg");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card5 .Back{
+background-image: url("/images/RomaB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotate3d(1,1,1,180deg);
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card5:hover{
+  transform: rotate3d(1,1,1,180deg);
+}
+
+.Card6 .Front{
+background-image: url("/images/Soudia.jpg");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card6 .Back{
+background-image: url("/images/Soudia.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotate3d(1,1,1,180deg);
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card6:hover{
+  transform: rotate3d(-1,-1,-1,180deg);
+}
+
+.Card7 .Front{
+background-image: url("/images/AmiricaF.jpg");
+background-repeat: no-repeat;
+background-position-x: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: 2;
+backface-visibility: hidden;
+transition: 2s;
+}
+.Card7 .Back{
+background-image: url("/images/AmricaB.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 100%;
+position: absolute;
+transform: rotate3d(-1,-1,-1,180deg);
+backface-visibility: hidden;
+transition: 1s;
+}
+.Card7:hover{
+transform: rotate3d(1,1,1,180deg);
+}
+
+
+.Back-container{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 32, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.back-content h2{
+  font-size: 36px;
+}
+.back-content p{
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+.back-content button{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: rgba(252,153,91,255);
+  border: none;
+  font-size: 24px;
+  margin-top: 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+.back-content button:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.Back-container2{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 32, 59, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.back-content2 h2{
+  font-size: 30px;
+}
+.back-content2 p{
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+.back-content2 button{
+  width: 100px;
+  font-size: 24px;
+  height: 40px;
+  color: white;
+  background-color: rgba(252,153,91,255);
+  border: none;
+  transition: 1s;
+  margin-top: 10px ;
+  cursor: pointer;
+}
+.back-content2 button:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+/* Special End */
+
+/* Op Section Start */
+.big-contaner{
+  width: 99vw;
+}
+.op_container{
+  width: 90vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  display: Grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+}
+.Right,.Left{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: rgba(252,153,91,255);
+  border: none;
+  font-size: 24px;
+  margin-top: 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+.Right{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.Left{
+  margin-left: 20px;
+}
+.Right:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.Left:hover{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.op_container .slide1{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(160, 153, 144);
+  transition: 2s;
+  border-radius: 20px 0 0 20px;
+}
+.op_container .slide2{
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(18, 28, 56);
+  transition: 2s;
+}
+.slide1 h2{
+  font-size: 48px;
+  font-weight: 600;
+  transition: 2s;
+}
+.slide2 h2{
+  font-size: 48px;
+  font-weight: 600;
+  color: white;
+  transition: 2s;
+}
+.Right:hover ~ .op_container .slide2{
+  animation-name: Slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.Right:hover ~ .op_container .slide2 h2{
+opacity: 0;
+}
+.Left:hover ~ .op_container .slide1{
+  animation-name: Slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.Left:hover ~ .op_container .slide1 h2{
+opacity: 0;
+}
+.content{
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.content .img_circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: url("/images/backg.jpg");
+  background-size: cover;
+  margin: auto;
+}
+/* Op Section End */
+
+/* our traveles Section Start*/
+.our_traveles{
+  margin-top: 50px;
+  height: 170vh;
+}
+.travel_container{
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.travel{
+  width: 30%;
+  height: 500px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+background-color: rgb(5,5,27);
+}
+.cimg1{
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/AustraliaF.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 2s all;
+}
+.cimg2{
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/EgyB.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 2s all;
+}
+.cimg3{
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/EuropeB.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 2s all;
+}
+.cimg4{
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/FranceB.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 2s all;
+}
+.cimg5{
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/RomaB.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: 2s all;
+}
+.travel_content{
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s all;
+  text-align: center;
+}
+.travel_content h2{
+  font-size: 36px;
+  color: rgba(252,153,91,255);
+  width: fit-content;
+  margin: auto;
+}
+.travel_content h3{
+  color: white;
+}
+.travel_content button{
+  margin-top: 20px;
+}
+.travel:hover .cimg1{
+height: 50%;
+}
+.travel:hover .cimg2{
+height: 50%;
+}
+.travel:hover .cimg3{
+height: 50%;
+}
+.travel:hover .cimg4{
+height: 50%;
+}
+.travel:hover .cimg5{
+height: 50%;
+}
+.travel:hover .travel_content{
+  visibility: visible;
+  opacity: 1;
+}
+/* our traveles Section End*/
+
+/* Footer Start */
+
+footer{
+  width: 80vw;
+  height: 70px;
+background-color: rgba(252,153,91,255);
+  margin: auto;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  width: fit-content;
+  color: white;
+}
+
+/* Footer End */
+
+
+/* Animations */
+@keyframes Slide{
+  0%{
+    height: 100%;
+  }
+  100%{
+    height: 0%;
+  }
+}
+
+
+
+
+
+/*  
+background-color: rgba(252,153,91,255);
+#ffb703
+rgb(5,5,27)
+
+*/
